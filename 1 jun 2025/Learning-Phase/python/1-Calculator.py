@@ -8,7 +8,7 @@ if num1.isdigit() and num2.isdigit():
     num2 = int(num2)
     op = input("Enter Your Operation (+, -, /, *): ")
 
-    if op == "+":
+    if op == "+":  #performs the operation here
         print("Result:", num1 + num2)
     elif op == "-":
         print("Result:", num1 - num2)
@@ -22,4 +22,4 @@ if num1.isdigit() and num2.isdigit():
     else:
         print("Please enter a valid operation, bruh!")
 else:
-    print("Give a valid number, bruh!")
+    print("Give a valid number, bruh!!")
