@@ -6,7 +6,7 @@ num2 = input("Enter Your Second Number: ")
 if num1.isdigit() and num2.isdigit():
     num1 = int(num1)
     num2 = int(num2)
-    op = input("Enter Your Operation (+, -, /, *): ")
+    op = input("Enter Your Operation (+, -, /, *, **[1st raised to power of 2nd]): ")
 
     if op == "+":  #performs the operation here
         print("Result:", num1 + num2)
@@ -19,6 +19,8 @@ if num1.isdigit() and num2.isdigit():
             print("Result:", num1 / num2)
     elif op == "*":
         print("Result:", num1 * num2)
+    elif op == "**":
+        print("Result:", num1**num2)
     else:
         print("Please enter a valid operation, bruh!")
 else:
