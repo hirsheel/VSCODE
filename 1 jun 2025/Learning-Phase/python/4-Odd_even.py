@@ -13,4 +13,4 @@ try:
         print("Wanna let you know that decimals \"Can't be Odd/Even!\"")
 except:  # For some great Scholars (￣y▽,￣)╭
     print("You Sure are a Mathematician lol, Give a valid Number!")
-print("helo")
+
