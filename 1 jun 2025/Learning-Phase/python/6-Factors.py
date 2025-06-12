@@ -5,10 +5,12 @@ try:
     if flo.is_integer():
         flo = int(flo)
         i = 1
+        fac = []
         while i <= flo:
             if flo % i == 0:
-                print(i, end=", ") 
+                fac.append(str(i))
             i += 1
+        print('Factors: ', ", ".join(fac))
     else:
         print("Give a Valid Integral Input please!")
 except:
