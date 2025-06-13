@@ -25,3 +25,5 @@ while i <= 10:                                                                  
         else:
             print("Give a Valid Number...")
     i += 1
+else:
+    print(f"\nGame OVER! The Number was {num} \n Better LucK next Time!")
