@@ -1,25 +1,25 @@
-import random 
+import random
 num = random.randint(1, 100)
 print("Welcome to Number Guessing Game!")
-print("How to play: A random number is choosed between 1-100 and hints are given to guess. \nIf user Fails to guess it in 15 times, You LOSE!")
-i=1
-while i <= 15:
-    guess = input(f"Enter Your Guess(chance {i}): ")
-    try:
+print("How to play: A random number is choosed by computer \nbetween 1-100 and hints are given to guess. \nIf You guess it in 10 times, You WIN!")
+i = 0
+while i <= 10:                                                                   # 10+1(trial) chance loop
+    guess = input(f"Enter Your Guess or Q to Quit (chance {i}): ").strip()           
+    try:                                                                         # checks if guess is a number
         guess = float(guess)
         if guess <= 100 and guess >= 1:
             if guess < num:
                 print("Guess Higher Value...")
             elif guess > num:
-                print("Guess Lowerer...")
+                print("Guess Lower...")
             elif guess == num:
                 print("THATS THE EXACT NUMBER!")
                 print("Congratulations You Won!")
                 break
         else:
             print("Guess a number between 1-100 (1 and 100 included)")
-    except:
-        if guess.uppper == "Q":
+    except:                                                                       # Handles if guess isnt a number
+        if guess.upper() == "Q":
             print("Thanks for playing")
             break
         else:
