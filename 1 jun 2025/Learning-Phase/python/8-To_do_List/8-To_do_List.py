@@ -1,21 +1,20 @@
-def f(n):
-    # fb(0) == 0
-    # fb(1) == 1
-    # fb(n) == fb(n-1) + fb(n-2)
-    if n == 0:
-        return 0
-    elif n == 1:
-        return 1
-    else:
-        return f(n-1) + f(n-2)
-l = []
-i = 0
-while i != 15:
-    m = int(input('json: '))
-    f(m) 
-    l.append(f(m))
-    i += 1
+print("Choose from The Options Below:")
+print("1.Add tasks")
+print("2.Delete tasks")
+print("3.Mark tasks as complete")
+print("4.Remark Completed Tasks as Incomplete")
+print("5.View all incomplete tasks")
+print("6.Show all completed tasks")
+ask = input("Choose Your Option(1-6) or q to Quit: ").strip()
+if ask.lower() == "q":
+    print("Have A Nice Day!")
 else:
-    for k in l:
-        print(k, end =", ")
-    
+    try:
+        ask = int(ask)
+        if ask == 1:
+            task = input("State Your Task: ").strip()
+            with open("Task.txt", "a") as a:
+                a.write(task + "\n")
+            
+    except:
+        print("Please Give A Valid Input (1-6) Or q to Quit")
