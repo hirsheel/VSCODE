@@ -112,9 +112,9 @@ while True:
                             c.writelines(lines)
                         print(f"\n---Task {incomplete} marked as incomplete again---\n")
                     else:
-                        print("It's already Incomplete lol")
+                        print("\n--------It's already Incomplete lol--------\n")
                 else:
-                    print("Give a Valid Input! ")
+                    print("\n-------------Give a Valid Input!-------------------\n ")
 
             # Option 6: Show tasks
             elif ask == 6:
@@ -122,7 +122,7 @@ while True:
 
             # Invalid number input
             else:
-                print("\nPlease Give A Valid Input (1-6) Or q to Quit\n")
+                print("\n---------Please Give A Valid Input (1-6) Or q to Quit---------\n")
 
         except:
-            print("\nPlease Give A Valid Input (1-6) Or q to Quit\n")
+            print("\n--------Please Give A Valid Input (1-6) Or q to Quit---------\n")     
